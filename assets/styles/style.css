@@ -1,8 +1,8 @@
 * {
     margin: 0;
     font-family: "BarlowSemiCondensed", sans-serif;
-    line-height: 150%;
-    letter-spacing: 0;
+    line-height: 125%;
+    letter-spacing: 0.05rem;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 }
 
 .html {
-    background: hsl(0, 0%, 81%);
+    background: hsl(210, 46%, 95%);
 }
 
 main {
@@ -24,20 +24,82 @@ main {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: 3.5rem 0;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     max-width: 20rem;
-    padding: 1rem;
+    padding: 1.75rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem hsl(210, 52%, 88%);
 }
 
+.card-1 {
+    background: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+}
+.card-2 {
+    background: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+.card-3{
+    background: hsl(0, 0%, 100%);
+}
+.card-4 {
+    background: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+.card-5{
+    background: hsl(0, 0%, 100%);
+}
 
+.icon-1 {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: absolute;
+    transform: translate(0, -1rem); 
+}
 
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
+.top img {
+    width: 2.5rem;
+    border: 2px solid hsla(210, 46%, 95%, 0.337);
+    margin-right: 0.75rem;
+    border-radius: 100px;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.position {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.title-review {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.detail-review {
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 
 

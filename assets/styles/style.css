@@ -2,7 +2,7 @@
     margin: 0;
     font-family: "BarlowSemiCondensed", sans-serif;
     line-height: 125%;
-    letter-spacing: 0.05rem;
+    /* letter-spacing: 0.05rem; */
 }
 
 @font-face {
@@ -24,6 +24,8 @@ main {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    justify-content: center;
     margin: 3.5rem 0;
 }
 
@@ -73,19 +75,19 @@ main {
 }
 
 .top img {
-    width: 2.5rem;
+    width: 2.25rem;
     border: 2px solid hsla(210, 46%, 95%, 0.337);
-    margin-right: 0.75rem;
+    margin-right: 1rem;
     border-radius: 100px;
 }
 
 .name {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
 }
 
 .position {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -101,17 +103,10 @@ main {
     font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    display: flex;
+    justify-content: center;
+}
 
 .attribution {
   font-size: 11px;
@@ -119,4 +114,49 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width:60rem) {
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(10rem, auto);
+        max-width: 80%;
+        margin: 5rem;
+    }
+    .card {
+        min-width: 10rem;
+        max-width: none;
+        margin: 0.5rem;
+    }
+
+    .card-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .card-2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .card-3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .card-4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .card-5 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
 }

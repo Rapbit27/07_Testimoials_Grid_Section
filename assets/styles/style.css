@@ -120,7 +120,7 @@ footer {
 @media (min-width:60rem) {
     .wrapper {
         grid-template-columns: repeat(4, 1fr);
-        max-width: 80rem;
+        max-width: 75rem;
         margin: 5rem;
     }
     .card {
